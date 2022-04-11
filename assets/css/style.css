@@ -1,0 +1,50 @@
+body {
+ 
+  padding-top: 72px;
+}
+
+.box-shadow{
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.icones {
+  height: 70px;
+
+
+}
+
+#home-quote {
+    
+  background: url(../img/bg-quote.jpg) center center;
+/* background: rgba(7, 0, 36, 0.5); */
+  background-size: conver;
+  height: 400px;
+  color: #fff;
+  padding: 120px auto;
+
+}
+#home-quote p {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.acordeon-tamanho {
+  max-width: 75%;
+}
+.capitalize {
+  text-transform: uppercase;
+}
+
+
+
+@media (max-width: 700px) {
+  body {
+    padding-top: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+
+
+}
+
+
