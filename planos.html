@@ -14,7 +14,7 @@
 
   <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Local - Caravan</title>
+  <title>Planos - Caravan</title>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link text-primary" href="local.html">California</a>
+          <a class="nav-link" href="local.html">California</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="local.html">Paris</a>
@@ -73,7 +73,7 @@
           <a class="nav-link" href="local.html">Dublin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="planos.html">Planos</a>
+          <a class="nav-link text-primary" href="planos.html">Planos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contato.html">Contato</a>
@@ -82,7 +82,7 @@
           <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-primary ms-md-2" href="">Inscreva-se</a>
+          <a class="btn btn-outline-primary ms-md-2" href="inscreva-se.html">Inscreva-se</a>
         </li>
       </ul>
     </div>
@@ -90,92 +90,80 @@
   </nav>
 
 
+  <!-- fecha navegação -->
 
-
-  <section class="py-5 bg-light bg-gradient text-dark text-center">
-
-    <div class="container mt-5">
-      <span class="h6 d-block mb-4">O MELHOR DESTINO DA SUA VIAGEM</span>
-      <h2 class="display-5 text-light bg-secondary p-3 mb-4">Descubra California</h2>
+  <section class="container text-center my-5">
+    <div class="mb-5">
+      <span class="h6 d-block capitalize pt-5">Seu plano, sua viagem</span>
+      <h2 class="display-4 text-primary">Escolha o plano</h2>
     </div>
+  </section>
+  <section class="container mb-5">
+    <div class="row text-left">
+      <div class="col-md mb-5 align-self-center">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Gold</h2>
+          <ul class="list-unstyled lista-plano">
+            <li> <span data-bs-toggle="tooltip" data-bs-placement="right" title="Isso mesmo são 30 dias totais durante a viagem.">⇢ 30 dias de viagem</span> </li>
+            <li>⇢ 3 destinos diferentes</li>
+            <li>⇢ Tudo pago pela empresa</li>
+            <li>⇢ Ingressos para festas</li>
+          </ul>
 
-    <section class="container">
-      <div class="row">
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-1.jpg" alt="foto1">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-2.jpg" alt="foto2">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-3.jpg" alt="foto3">
-        </div>
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-4.jpg" alt="foto4">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-5.jpg" alt="foto5">
+          <select class="form-select bg-light" aria-label="Default select cidades">
+            <option selected>Selecione a cidade</option>
+            <option value="1">California</option>
+            <option value="2">Paris</option>
+            <option value="3">Dublin</option>
+          </select>
+          <div class="row align-items-center pt-4">
+            <div class="col">
+              <a href="" class="btn btn-lg btn-primary opacity-75"> Comprar Plano </a>
+            </div>
+            <div class="col">
+              <span class="display-6 text-secondary opacity-75">R$ 5.000,00</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="row">
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-1.jpg" alt="foto1">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-6.jpg" alt="foto6">
-        </div>
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-7.jpg" alt="foto7">
+
+      <div class="col-md  mb-5">
+        <div class="bg-secondary bg-gradient text-light rounded p-4 box-shadow">
+          <h2>Platinum <span class="badge text-secondary bg-light bg-gradient ">Novo</span></h2>
+          <ul class="list-unstyled lista-plano">
+            <li>⇢ 45 dias de viagem</li>
+            <li>⇢ 3 destinos diferentes</li>
+            <li>⇢ Tudo pago pela empresa</li>
+            <li>⇢ Ingressos para festas</li>
+            <li>⇢ Acompanhamento premium</li>
+            <li>⇢ Nutricionista disponível</li>
+          </ul>
+
+          <select class="form-select bg-light" aria-label="Default select cidades">
+            <option selected>Selecione a cidade</option>
+            <option value="1">California</option>
+            <option value="2">Paris</option>
+            <option value="3">Dublin</option>
+          </select>
+          <div class="row align-items-center pt-4">
+            <div class="col">
+              <a href="" class="btn btn-lg btn-light bg-gradient"> Comprar Plano </a>
+            </div>
+            <div class="col">
+              <span class="display-6 text-black">R$ 6.000,00</span>
+            </div>
+          </div>
 
         </div>
       </div>
-    </section>
 
 
 
-  </section>
-
-  <section class="container mt-5 pb-5">
-    <div class="text-center my-5">
-      <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
-      <h2 class="display-4 text-primary mb-4">Próximos eventos</h2>
     </div>
-
-    <table class="table table-hover table-responsive-md">
-      <thead>
-        <tr>
-          <th scope="col">Data</th>
-          <th scope="col">Evento</th>
-          <th scope="col">Local</th>
-          <th scope="col">Ticket</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Gustavo Lima</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Pedro Souza</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Calcinha Preta</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Sergio Torres</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Menino Levado</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-    </table>
-
   </section>
+
+
 
 
 

@@ -14,7 +14,7 @@
 
   <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Caravan</title>
+  <title>Contato - Caravan</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-  <!-- fecha modal -->
+  <!-- fecha Modal -->
 
   <nav class="navbar box-shadow fixed-top navbar-expand-md navbar-light bg-light p-3">
     <a href="index.html" class="navbar-brand">
@@ -76,7 +76,7 @@
           <a class="nav-link" href="planos.html">Planos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contato.html">Contato</a>
+          <a class="nav-link text-primary" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
@@ -89,147 +89,77 @@
 
   </nav>
 
-  <section class="container-fluid text-white">
-    <div class="row bg-dark">
 
-      <!-- carrosel -->
-      <div class="col-lg-7 p-0">
+  <!-- fecha navegação -->
 
-        <div id="carouselCidades" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/img/california.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="display-3">Califórnia</h5>
+  <section class="container text-center">
+    <div class="mb-5">
+      <span class="h6 d-block capitalize pt-5">POSSUI ALGUMA DÚVIDA?</span>
+      <h2 class="display-4 text-primary">Fale Conosco</h2>
+    </div>
 
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/paris.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="display-3"">Paris</h5>
-
-              </div>
-            </div>
-            <div class=" carousel-item">
-                  <img src="assets/img/dublin.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="display-3">Dublin</h5>
-
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCidades" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCidades" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
-          </div>
-
-
-        </div>
-
-
-        <div class="col-md-5 p-4 align-self-center">
-          <h1 class="display-4">Realize a viagem de seu sonho</h1>
-          <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas.</p>
-          <form action="">
-            <div class="input-group input-group-lg mb-3">
-              <input type="text" class="form-control" placeholder="Seu melhor email" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-primary" type="button" id="button-addon2">Inscrever-se</button>
-            </div>
-          </form>
-        </div>
-      </div>
   </section>
 
-
-  <section class="py-5 bg-light bg-gradient text-dark text-center">
-
-    <div class="container mt-5">
-      <span class="h6 d-block">TUDO DE MELHOR PARA VOCÊ</span>
-      <h2 class="display-4">Aproveite as Vantagens</h2>
-
-      <div class="row">
-
-        <div class="col-xl-4 col-md-6 p-5">
-          <div class="icones d-flex justify-content-center">
-
-            <img src="assets/img/icones/passaporte.svg" alt="Documentos">
+  <section class="container">
+    <div class="row">
+      <div class="col-lg p-5">
+        <form class="bg-light rounded p-4 box-shadow">
+          <div class="mb-3">
+            <label for="clienteNome" class="form-label text-secondary">Nome</label>
+            <input type="text" class="form-control" id="clienteNome" aria-describedby="emailHelp">
           </div>
-          <h3 class="p-3 titulo-svg">Documentos</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur maiores?</p>
-        </div>
-
-        <div class="col-xl-4 col-md-6 p-5">
-          <div class="icones d-flex justify-content-center">
-            <img src="assets/img/icones/translado.svg" alt="translado">
+          <div class="mb-3">
+            <label for="clienteEmail" class="form-label text-secondary">Email</label>
+            <input type="email" class="form-control" id="clienteEmail" aria-describedby="emailHelp">
           </div>
-          <h3 class="p-3">Translado</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur maiores?</p>
-        </div>
-
-        <div class="col-xl-4 col-md-6 p-5">
-          <div class="icones d-flex justify-content-center">
-
-            <img src="assets/img/icones/passagens.svg" alt="passagens">
-
+          <div class="mb-3">
+            <div class="form-floating mb-3">
+              <label for="clienteMensagem" class="form-label text-secondary">Mensagem</label>
+              <textarea class="form-control" placeholder="mensagem" id="clienteMensagem" style="height: 150px"></textarea>
+            </div>
           </div>
-          <h3 class="p-3">Passagens</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur maiores?</p>
-        </div>
 
-        <div class="col-xl-4 col-md-6 p-5">
-          <div class="icones d-flex justify-content-center">
-            <img src="assets/img/icones/praias.svg" alt="praias">
-          </div>
-          <h3 class="p-3">Praias</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur maiores?</p>
-        </div>
 
-        <div class="col-xl-4 col-md-6 p-5">
-          <div class="icones d-flex justify-content-center">
-            <img src="assets/img/icones/bagagens.svg" alt="bagagens">
-          </div>
-          <h3 class="p-3">Bagagens</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur maiores?</p>
-        </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          <div class="form-text">Esqueceu a senha? <a href="">Clique aqui</a>.</div>
+        </form>
+      </div>
 
-        <div class="col-xl-4 col-md-6 p-5">
-          <div class="icones d-flex justify-content-center">
-            <img src="assets/img/icones/turismo.svg" alt="turismo">
-          </div>
-          <h3 class="p-3">Turismo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur maiores?</p>
-        </div>
+      <div class="col-lg p-5">
+        <h2 class="h6">NOSSO ENDEREÇO</h2>
+        <a href=""><img class="img-fluid box-shadow rounded mb-4" src="assets/img/mapa.jpg" alt="endereço da empresa"></a>
+        <h2 class="h6">DADOS DE CONTATO</h2>
 
+
+
+        <ul class="list-unstyled text-secondary">
+          <li>caravan@caravan.com.br</li>
+          <li>81 9999-9999</li>
+          <li>De Seg. à Sex. das 08 as 18h</li>
+        </ul>
+
+
+
+        <h2 class="h6 pb-2">REDES SOCIAIS</h2>
+        <div class="d-grid gap-2 col-6">
+          <button class="btn btn-outline-secondary" type="button">Facebook</button>
+          <button class="btn btn-outline-secondary" type="button">Instagram</button>
+          <button class="btn btn-outline-secondary" type="button">Whatsapp</button>
+        </div>
 
       </div>
 
-      <a href="planos.html" class="btn btn-primary btn-lg mt-4 mb-4">Comprar Plano</a>
 
+
+    </div>
     </div>
   </section>
 
-  <!-- seção bloquekote -->
 
-  <section id="home-quote" class="p-5 text-center">
-    <blockquote class="blockquote ">
-      <p class="display-5 p-5"><em>"A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada."</em></p>
-      <figcaption class="blockquote-footer text-white p-2">
-        Em busca da felicidade <cite title="Source Title">Bob Dylan</cite>
-      </figcaption>
-    </blockquote>
-  </section>
 
+
+
+  <!-- duvidas -->
   <section class="container text-center my-5 pb-5">
     <div class="">
       <span class="h6 d-block capitalize pt-5">Ainda está com dúvidas?</span>
@@ -300,17 +230,22 @@
         </div>
       </div>
 
-      <div class="text-center my-4">
-        <p class="small m-4">FALE CONOSCO PARA MAIS DÚVIDAS</p>
-        <a class="btn btn-primary btn-lg" href="contato.html">Entre em Contato</a>
-      </div>
+
 
 
     </div>
   </section>
 
 
-  <footer class="bg-dark pt-5 px-5 text-white">
+
+
+
+
+
+
+
+
+  <footer class="bg-dark px-5 text-white">
     <div class="container py-5 ">
       <div class="row">
         <div class="col-md-3 col-6 pt-4">

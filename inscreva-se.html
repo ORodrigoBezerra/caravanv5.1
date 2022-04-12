@@ -14,7 +14,7 @@
 
   <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Local - Caravan</title>
+  <title>Inscrição - Caravan</title>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link text-primary" href="local.html">California</a>
+          <a class="nav-link" href="local.html">California</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="local.html">Paris</a>
@@ -82,7 +82,7 @@
           <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-primary ms-md-2" href="inscreva-se.html">Inscreva-se</a>
+          <a class="btn btn-primary ms-md-2" href="inscreva-se.html">Inscreva-se</a>
         </li>
       </ul>
     </div>
@@ -90,92 +90,135 @@
   </nav>
 
 
+  <!-- fecha navegação -->
 
-
-  <section class="py-5 bg-light bg-gradient text-dark text-center">
-
-    <div class="container mt-5">
-      <span class="h6 d-block mb-4">O MELHOR DESTINO DA SUA VIAGEM</span>
-      <h2 class="display-5 text-light bg-secondary bg-gradient rounded  p-3 mb-4">Descubra California</h2>
+  <section class="container text-center my-5">
+    <div class="mb-5">
+      <span class="h6 d-block capitalize pt-5">Programe a viagem dos seus sonhos</span>
+      <h2 class="display-4 text-primary">Inscreva-se</h2>
     </div>
+  </section>
+  <section class="container mb-5">
+    <div class="row text-left">
+      <div class="col-md mb-5 align-self-center">
 
-    <section class="container">
-      <div class="row">
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-1.jpg" alt="foto1">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-2.jpg" alt="foto2">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-3.jpg" alt="foto3">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="clienteNome" class="form-label">Nome</label>
+            <input type="email" placeholder="Nome completo" class="form-control" id="clienteNome">
+          </div>
+          <div class="col-md-6">
+            <label for="clienteCPF" class="form-label">CPF</label>
+            <input type="number" placeholder="000.000.000-00" class="form-control" id="clienteCPF">
+          </div>
+          <div class="col-md-6">
+            <label for="clienteEmail" class="form-label">Email</label>
+            <input type="email" placeholder="email" class="form-control" id="clienteEmail">
+          </div>
+          <div class="col-md-6">
+            <label for="clienteSenha" class="form-label">Senha</label>
+            <input type="password" placeholder="Senha de acesso" class="form-control" id="clienteSenha">
+          </div>
+          <div class="col-12">
+            <label for="clienteEndereco" class="form-label">Endereço</label>
+            <input type="text" placeholder="Nome da rua, bairro e número" class="form-control" id="clienteEndereco">
+          </div>
+          <div class="col-12">
+            <label for="clienteEndereco2" class="form-label">Endereço 2</label>
+            <input type="text" placeholder="Nome da rua, bairro e número" class="form-control" id="clienteEndereco2">
+          </div>
+
+          <div class="col-md-6">
+            <label for="clienteCidade" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="clienteCidade">
+          </div>
+          <div class="col-md-4 col-6">
+            <label for="clienteEstado" class="form-label">Estado</label>
+            <select id="clienteEstado" class="form-select">
+              <option selected>PE</option>
+              <option>SP</option>
+              <option>RJ</option>
+              <option>SE</option>
+              <option>AL</option>
+              <option>BA</option>
+              <option>MA</option>
+            </select>
+          </div>
+          <div class="col-md-2 col-6">
+            <label for="clienteCEP" placeholder="Nome da rua, bairro e número" class="form-label">CEP</label>
+            <input type="text" class="form-control" placeholder="000000-000" id="clienteCEP">
+          </div>
+        </form>
+
+        <div class="bg-light rounded box-shadow p-4 mt-4">
+          <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+
+          <nav class="nav btn-group col-md-6" id="formaPagamento" role="tablist">
+            <button type="button" class="btn btn-sm btn-outline-secondary active" id="nav-cartao-tab" data-toggle="tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+            <button type="button" class="btn btn sm btn-outline-secondary" id="nav-boleto-tab" data-toggle="tab" href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto Bancário</button>
+
+          </nav>
+
+
+
+
         </div>
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-4.jpg" alt="foto4">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-5.jpg" alt="foto5">
+
+
+
+
+        <div class="col-12 mt-5 mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Confirmo que todas as informações são reais
+            </label>
+          </div>
+        </div>
+        <div class="d-grid col-6">
+          <button type="submit" class="btn btn-lg btn-primary">Inscreva-se</button>
+        </div>
+
+
+      </div>
+
+      <div class="col-md-5  mb-5 mt-5 ">
+        <h2 class="h6" style="text-transform: uppercase;">Plano Escolhido</h2>
+        <div class="bg-secondary bg-gradient text-light rounded p-4 box-shadow">
+          <h2>Platinum <span class="badge text-secondary bg-light bg-gradient ">Novo</span></h2>
+          <ul class="list-unstyled lista-plano">
+            <li>⇢ 45 dias de viagem</li>
+            <li>⇢ 3 destinos diferentes</li>
+            <li>⇢ Tudo pago pela empresa</li>
+            <li>⇢ Ingressos para festas</li>
+            <li>⇢ Acompanhamento premium</li>
+            <li>⇢ Nutricionista disponível</li>
+          </ul>
+
+          <select class="form-select bg-light" aria-label="Default select cidades">
+            <option selected>Selecione a cidade</option>
+            <option value="1">California</option>
+            <option value="2">Paris</option>
+            <option value="3">Dublin</option>
+          </select>
+          <div class="row align-items-center pt-4">
+            <div class="col">
+              <a href="" class="btn btn-lg btn-light bg-gradient"> Comprar Plano </a>
+            </div>
+            <div class="col">
+              <span class="h4 text-white">R$ 6.000,00</span>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="row">
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-1.jpg" alt="foto1">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-6.jpg" alt="foto6">
-        </div>
-        <div class="col-md">
-          <img class="img-fluid rounded mb-4" src="assets/img/local/foto-7.jpg" alt="foto7">
-
-        </div>
-      </div>
-    </section>
 
 
 
-  </section>
-
-  <section class="container mt-5 pb-5">
-    <div class="text-center my-5">
-      <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
-      <h2 class="display-4 text-primary mb-4">Próximos eventos</h2>
     </div>
-
-    <table class="table table-hover table-responsive-md">
-      <thead>
-        <tr>
-          <th scope="col">Data</th>
-          <th scope="col">Evento</th>
-          <th scope="col">Local</th>
-          <th scope="col">Ticket</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Gustavo Lima</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Pedro Souza</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Calcinha Preta</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Sergio Torres</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-        <tr>
-          <th scope="row">23/04</th>
-          <td>Menino Levado</td>
-          <td>Magazine</td>
-          <td><a href="" class="btn btn-outline-secondary btn-sm">Compra Ticket</a></td>
-        </tr>
-    </table>
-
   </section>
+
+
 
 
 
